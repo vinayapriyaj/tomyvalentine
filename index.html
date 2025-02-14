@@ -86,11 +86,12 @@
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 6) {
-          noButton.textContent = ["No", "Are you sure?", "please", "Don't do this to me :(", "You're breaking my heart", "You're gonna cry...😂"][noClickCount];
+          noButton.textContent = ["No", "Are you sure?", "please", "एक बार फिर सोचो तुम्हें मुझे अपनी बाकी जिंदगी झेलना होगा 😂","Don't do this to me :(", "You're breaking my heart", "You're gonna cry...😂"][noClickCount];
         }
       }
     });
-  
+
+    
     yesButton.addEventListener('click', () => {
       imageDisplay.src = './vinaya.jpeg'; // Change to image7.gif
       valentineQuestion.textContent = "Yayyyy! You clicked YES? Great, my family likes you already 😂. Happy Valentines Day "; // Change the question text
